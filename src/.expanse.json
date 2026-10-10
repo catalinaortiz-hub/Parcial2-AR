@@ -50,31 +50,32 @@
       },
       "name": "Box",
       "position": [
-        0,
-        0.5,
-        0
+        0.12713492428724482,
+        0.029127491656277593,
+        0.21580128087335293
       ],
       "rotation": [
+        4.163336342344343e-17,
         0,
-        0,
-        0,
+        2.407412430484045e-35,
         1
       ],
       "scale": [
-        1,
-        1,
-        1
+        0.49999999999999933,
+        0.4999999999999992,
+        0.49999999999999944
       ],
-      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
-      "order": 1.4038940050501252
+      "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
+      "order": 0.8039793840501143
     },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
         "xr": {
-          "desktop": "3D",
-          "xrCameraType": "3dOnly",
-          "headset": "disabled"
+          "desktop": "disabled",
+          "xrCameraType": "world",
+          "headset": "disabled",
+          "phone": "AR"
         }
       },
       "components": {},
@@ -129,6 +130,34 @@
       ],
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.6644431107322474
+    },
+    "57b0cee5-2bbd-4ca7-b901-87d13da85338": {
+      "id": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "Image Target",
+      "imageTarget": {
+        "name": "Colibrí libando flores tropicales"
+      },
+      "order": 2.624078997113085
     }
   },
   "spaces": {
