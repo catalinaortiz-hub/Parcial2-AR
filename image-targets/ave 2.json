@@ -1,10 +1,10 @@
 {
   "type": "PLANAR",
   "properties": {
-    "top": 0,
-    "left": 50,
-    "width": 1500,
-    "height": 2000,
+    "top": 867,
+    "left": 534,
+    "width": 674,
+    "height": 899,
     "isRotated": true,
     "originalWidth": 1600,
     "originalHeight": 2000
@@ -19,5 +19,5 @@
     "luminanceImage": "ave 2_luminance.png"
   },
   "created": 1791739141923,
-  "updated": 1791739141923
+  "updated": 1791743932848
 }

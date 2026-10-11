@@ -28,46 +28,6 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "order": 0.4038940050501252
     },
-    "729478ae-d067-4e0c-a753-66c2e9efb625": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "729478ae-d067-4e0c-a753-66c2e9efb625",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box",
-      "position": [
-        -0.03623348363149248,
-        0.029127491656277593,
-        0.31488552796599323
-      ],
-      "rotation": [
-        4.163336342344343e-17,
-        0,
-        2.407412430484045e-35,
-        1
-      ],
-      "scale": [
-        0.49999999999999933,
-        0.4999999999999992,
-        0.49999999999999944
-      ],
-      "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
-      "order": 0.8039793840501143
-    },
     "a608ddd9-9379-464d-966f-5d8d8674c83c": {
       "camera": {
         "type": "perspective",
@@ -134,7 +94,7 @@
     "57b0cee5-2bbd-4ca7-b901-87d13da85338": {
       "id": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
       "position": [
-        0,
+        1.1804090034987853,
         0,
         0
       ],
@@ -188,50 +148,10 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "hidden": false
     },
-    "a479eb20-1a0e-4eb7-b2f9-6b3782cc8d78": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "a479eb20-1a0e-4eb7-b2f9-6b3782cc8d78",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box (1)",
-      "position": [
-        -0.03623348363149248,
-        0.029127491656277593,
-        0.31488552796599323
-      ],
-      "rotation": [
-        4.163336342344343e-17,
-        0,
-        2.407412430484045e-35,
-        1
-      ],
-      "scale": [
-        0.49999999999999933,
-        0.4999999999999992,
-        0.49999999999999944
-      ],
-      "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
-      "order": 1
-    },
     "0c3c7387-1444-4a49-8155-965b8e975f53": {
       "id": "0c3c7387-1444-4a49-8155-965b8e975f53",
       "position": [
-        0,
+        -1.144908177363636,
         0,
         0
       ],
@@ -257,50 +177,10 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "hidden": false
     },
-    "3f773da3-2938-4994-b0d0-bd0d2d07c46d": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "3f773da3-2938-4994-b0d0-bd0d2d07c46d",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box (2)",
-      "position": [
-        -0.03623348363149248,
-        0.029127491656277593,
-        0.31488552796599323
-      ],
-      "rotation": [
-        4.163336342344343e-17,
-        0,
-        2.407412430484045e-35,
-        1
-      ],
-      "scale": [
-        0.49999999999999933,
-        0.4999999999999992,
-        0.49999999999999944
-      ],
-      "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
-      "order": 1
-    },
     "89ffd54b-1043-429b-b54b-f482a86b67ce": {
       "id": "89ffd54b-1043-429b-b54b-f482a86b67ce",
       "position": [
-        0,
+        -2.2936486655696537,
         0,
         0
       ],
@@ -326,50 +206,10 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "hidden": false
     },
-    "afd40414-cdf7-45bd-810a-1782ac5f0faf": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "afd40414-cdf7-45bd-810a-1782ac5f0faf",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box (3)",
-      "position": [
-        -0.03623348363149248,
-        0.029127491656277593,
-        0.31488552796599323
-      ],
-      "rotation": [
-        4.163336342344343e-17,
-        0,
-        2.407412430484045e-35,
-        1
-      ],
-      "scale": [
-        0.49999999999999933,
-        0.4999999999999992,
-        0.49999999999999944
-      ],
-      "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
-      "order": 1
-    },
     "64a98c3d-a407-4b0b-b4bc-50f0db006bfe": {
       "id": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
       "position": [
-        0,
+        2.361118642153189,
         0,
         0
       ],
@@ -395,45 +235,169 @@
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "hidden": false
     },
-    "00aeefc3-9c42-44b7-ac1a-771ba5fd8c81": {
-      "components": {
-        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
-          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
-          "name": "example-component",
-          "parameters": {}
-        }
-      },
-      "geometry": {
-        "depth": 1,
-        "height": 1,
-        "type": "box",
-        "width": 1
-      },
-      "id": "00aeefc3-9c42-44b7-ac1a-771ba5fd8c81",
-      "material": {
-        "color": "#7611b6",
-        "type": "basic",
-        "textureFiltering": "sharp"
-      },
-      "name": "Box (4)",
+    "1932de53-29f1-41b6-bc8a-3ed4e4ad0550": {
+      "id": "1932de53-29f1-41b6-bc8a-3ed4e4ad0550",
       "position": [
-        -0.03623348363149248,
-        0.029127491656277593,
-        0.31488552796599323
+        0,
+        0,
+        0
       ],
       "rotation": [
-        4.163336342344343e-17,
         0,
-        2.407412430484045e-35,
+        0,
+        0,
         1
       ],
       "scale": [
-        0.49999999999999933,
-        0.4999999999999992,
-        0.49999999999999944
+        0.5000000000000006,
+        0.5000000000000006,
+        0.5000000000000006
       ],
+      "geometry": {
+        "type": "sphere",
+        "radius": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
+      "components": {},
+      "name": "Sphere",
+      "order": 1.8006080637570332
+    },
+    "c4d2488f-bd0b-440a-ba50-2746209303e4": {
+      "id": "c4d2488f-bd0b-440a-ba50-2746209303e4",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 1,
+        "height": 1,
+        "width": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
+      "components": {},
+      "name": "Box",
+      "order": 1.5540455048305906,
+      "hidden": false
+    },
+    "d2c0875f-2e90-4966-8ba3-4865afbdb79c": {
+      "id": "d2c0875f-2e90-4966-8ba3-4865afbdb79c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.4,
+        0.4,
+        0.4
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
+      "components": {},
+      "name": "Cylinder",
+      "order": 1.4945210845348993,
+      "hidden": false
+    },
+    "90ae3285-78fc-4da6-87e0-b1c0af45a7f8": {
+      "id": "90ae3285-78fc-4da6-87e0-b1c0af45a7f8",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.40000000000000047,
+        0.40000000000000047,
+        0.40000000000000047
+      ],
+      "geometry": {
+        "type": "cone",
+        "radius": 0.5,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
+      "components": {},
+      "name": "Cone",
+      "order": 1.627927499701658,
+      "hidden": false
+    },
+    "fcad4342-0b83-4a3d-8e55-c7724d239264": {
+      "id": "fcad4342-0b83-4a3d-8e55-c7724d239264",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.30000000000000004,
+        0.30000000000000004,
+        0.30000000000000004
+      ],
+      "geometry": {
+        "type": "polyhedron",
+        "radius": 1,
+        "faces": 4
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
       "parentId": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
-      "order": 1
+      "components": {},
+      "name": "Polyhedron",
+      "order": 1.676497721050164,
+      "hidden": false
     }
   },
   "spaces": {
