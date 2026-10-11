@@ -1,7 +1,12 @@
 const onxrloaded = () => {
   XR8.XrController.configure({
     imageTargetData: [
-      require('../image-targets/Colibrí libando flores tropicales.json'),
+      require('../image-targets/ave 1.json'),
+      require('../image-targets/ave 2.json'),
+      require('../image-targets/ave 3.json'),
+      require('../image-targets/ave 4.json'),
+      require('../image-targets/ave 5.json'),
+
     ],
   })
 }

@@ -50,9 +50,9 @@
       },
       "name": "Box",
       "position": [
-        0.12713492428724482,
+        -0.03623348363149248,
         0.029127491656277593,
-        0.21580128087335293
+        0.31488552796599323
       ],
       "rotation": [
         4.163336342344343e-17,
@@ -153,11 +153,287 @@
       "material": null,
       "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
       "components": {},
-      "name": "Image Target",
+      "name": "ave 1",
       "imageTarget": {
-        "name": "Colibrí libando flores tropicales"
+        "name": "ave 1"
       },
       "order": 2.624078997113085
+    },
+    "8ca67a21-3fc9-4110-8c55-6285b63110c6": {
+      "id": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "name": "ave 2",
+      "imageTarget": {
+        "name": "ave 2"
+      },
+      "order": 4.215904759263549,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "hidden": false
+    },
+    "a479eb20-1a0e-4eb7-b2f9-6b3782cc8d78": {
+      "components": {
+        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
+          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
+          "name": "example-component",
+          "parameters": {}
+        }
+      },
+      "geometry": {
+        "depth": 1,
+        "height": 1,
+        "type": "box",
+        "width": 1
+      },
+      "id": "a479eb20-1a0e-4eb7-b2f9-6b3782cc8d78",
+      "material": {
+        "color": "#7611b6",
+        "type": "basic",
+        "textureFiltering": "sharp"
+      },
+      "name": "Box (1)",
+      "position": [
+        -0.03623348363149248,
+        0.029127491656277593,
+        0.31488552796599323
+      ],
+      "rotation": [
+        4.163336342344343e-17,
+        0,
+        2.407412430484045e-35,
+        1
+      ],
+      "scale": [
+        0.49999999999999933,
+        0.4999999999999992,
+        0.49999999999999944
+      ],
+      "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
+      "order": 1
+    },
+    "0c3c7387-1444-4a49-8155-965b8e975f53": {
+      "id": "0c3c7387-1444-4a49-8155-965b8e975f53",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "name": "ave 3",
+      "imageTarget": {
+        "name": "ave 3"
+      },
+      "order": 5.438838942680978,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "hidden": false
+    },
+    "3f773da3-2938-4994-b0d0-bd0d2d07c46d": {
+      "components": {
+        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
+          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
+          "name": "example-component",
+          "parameters": {}
+        }
+      },
+      "geometry": {
+        "depth": 1,
+        "height": 1,
+        "type": "box",
+        "width": 1
+      },
+      "id": "3f773da3-2938-4994-b0d0-bd0d2d07c46d",
+      "material": {
+        "color": "#7611b6",
+        "type": "basic",
+        "textureFiltering": "sharp"
+      },
+      "name": "Box (2)",
+      "position": [
+        -0.03623348363149248,
+        0.029127491656277593,
+        0.31488552796599323
+      ],
+      "rotation": [
+        4.163336342344343e-17,
+        0,
+        2.407412430484045e-35,
+        1
+      ],
+      "scale": [
+        0.49999999999999933,
+        0.4999999999999992,
+        0.49999999999999944
+      ],
+      "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
+      "order": 1
+    },
+    "89ffd54b-1043-429b-b54b-f482a86b67ce": {
+      "id": "89ffd54b-1043-429b-b54b-f482a86b67ce",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "name": "ave 4",
+      "imageTarget": {
+        "name": "ave 4"
+      },
+      "order": 7.4173299773765065,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "hidden": false
+    },
+    "afd40414-cdf7-45bd-810a-1782ac5f0faf": {
+      "components": {
+        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
+          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
+          "name": "example-component",
+          "parameters": {}
+        }
+      },
+      "geometry": {
+        "depth": 1,
+        "height": 1,
+        "type": "box",
+        "width": 1
+      },
+      "id": "afd40414-cdf7-45bd-810a-1782ac5f0faf",
+      "material": {
+        "color": "#7611b6",
+        "type": "basic",
+        "textureFiltering": "sharp"
+      },
+      "name": "Box (3)",
+      "position": [
+        -0.03623348363149248,
+        0.029127491656277593,
+        0.31488552796599323
+      ],
+      "rotation": [
+        4.163336342344343e-17,
+        0,
+        2.407412430484045e-35,
+        1
+      ],
+      "scale": [
+        0.49999999999999933,
+        0.4999999999999992,
+        0.49999999999999944
+      ],
+      "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
+      "order": 1
+    },
+    "64a98c3d-a407-4b0b-b4bc-50f0db006bfe": {
+      "id": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {},
+      "name": "ave 5",
+      "imageTarget": {
+        "name": "ave 5"
+      },
+      "order": 9.012527645479993,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "hidden": false
+    },
+    "00aeefc3-9c42-44b7-ac1a-771ba5fd8c81": {
+      "components": {
+        "8fe14f4e-4311-4b03-807d-a34c9c11368d": {
+          "id": "8fe14f4e-4311-4b03-807d-a34c9c11368d",
+          "name": "example-component",
+          "parameters": {}
+        }
+      },
+      "geometry": {
+        "depth": 1,
+        "height": 1,
+        "type": "box",
+        "width": 1
+      },
+      "id": "00aeefc3-9c42-44b7-ac1a-771ba5fd8c81",
+      "material": {
+        "color": "#7611b6",
+        "type": "basic",
+        "textureFiltering": "sharp"
+      },
+      "name": "Box (4)",
+      "position": [
+        -0.03623348363149248,
+        0.029127491656277593,
+        0.31488552796599323
+      ],
+      "rotation": [
+        4.163336342344343e-17,
+        0,
+        2.407412430484045e-35,
+        1
+      ],
+      "scale": [
+        0.49999999999999933,
+        0.4999999999999992,
+        0.49999999999999944
+      ],
+      "parentId": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
+      "order": 1
     }
   },
   "spaces": {

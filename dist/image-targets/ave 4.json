@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 0,
+    "left": 50,
+    "width": 1500,
+    "height": 2000,
+    "isRotated": true,
+    "originalWidth": 1600,
+    "originalHeight": 2000
+  },
+  "imagePath": "image-targets/ave 4_luminance.png",
+  "metadata": null,
+  "name": "ave 4",
+  "resources": {
+    "originalImage": "ave 4_original.png",
+    "croppedImage": "ave 4_cropped.png",
+    "thumbnailImage": "ave 4_thumbnail.png",
+    "luminanceImage": "ave 4_luminance.png"
+  },
+  "created": 1791739171215,
+  "updated": 1791739171215
+}
