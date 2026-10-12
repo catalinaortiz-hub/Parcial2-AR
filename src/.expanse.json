@@ -303,99 +303,96 @@
       "position": [
         0,
         0,
-        0
+        0.1445135420316
       ],
       "rotation": [
-        0,
-        0,
-        0,
-        1
+        0.6875693645350215,
+        -0.16507079981907138,
+        -0.16507079981907238,
+        0.6875693645350215
       ],
       "scale": [
         0.4,
         0.4,
         0.4
       ],
-      "geometry": {
-        "type": "cylinder",
-        "radius": 0.5,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
       "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
       "components": {},
       "name": "Cylinder",
       "order": 1.4945210845348993,
-      "hidden": false
+      "hidden": false,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Meshy_AI_Hummingbird_SmartTopo_1012033623_texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
     },
     "90ae3285-78fc-4da6-87e0-b1c0af45a7f8": {
       "id": "90ae3285-78fc-4da6-87e0-b1c0af45a7f8",
       "position": [
         0,
         0,
-        0
+        0.19780332131034992
       ],
       "rotation": [
+        0.7071067811865474,
         0,
         0,
-        0,
-        1
+        0.7071067811865477
       ],
       "scale": [
         0.40000000000000047,
-        0.40000000000000047,
-        0.40000000000000047
+        0.40000000000000036,
+        0.40000000000000036
       ],
-      "geometry": {
-        "type": "cone",
-        "radius": 0.5,
-        "height": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
       "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
       "components": {},
       "name": "Cone",
       "order": 1.627927499701658,
-      "hidden": false
+      "hidden": false,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Meshy_AI_Southern_Lapwing_Bird_1012034655_texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
     },
     "fcad4342-0b83-4a3d-8e55-c7724d239264": {
       "id": "fcad4342-0b83-4a3d-8e55-c7724d239264",
       "position": [
         0,
         0,
-        0
+        0.0870575022855756
       ],
       "rotation": [
-        0,
-        0,
-        0,
-        1
+        0.6644630243886764,
+        -0.24184476264797444,
+        -0.24184476264797758,
+        0.6644630243886767
       ],
       "scale": [
         0.30000000000000004,
         0.30000000000000004,
         0.30000000000000004
       ],
-      "geometry": {
-        "type": "polyhedron",
-        "radius": 1,
-        "faces": 4
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
       "parentId": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
       "components": {},
       "name": "Polyhedron",
       "order": 1.676497721050164,
-      "hidden": false
+      "hidden": false,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Meshy_AI_Blue_Bird_Smart_Topol_1012035232_texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
     }
   },
   "spaces": {
