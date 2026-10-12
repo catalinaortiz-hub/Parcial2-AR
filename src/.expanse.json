@@ -393,6 +393,50 @@
         "animationClip": "",
         "loop": true
       }
+    },
+    "d899582e-bdf1-482c-ab49-f1900dfa91c1": {
+      "id": "d899582e-bdf1-482c-ab49-f1900dfa91c1",
+      "position": [
+        0.45006629256610764,
+        0,
+        0.2
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.15,
+        0.15,
+        0.15
+      ],
+      "geometry": {
+        "type": "sphere",
+        "radius": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#dd1b22"
+      },
+      "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
+      "components": {
+        "a51e4cea-15e8-407b-b175-fd8713eae3a4": {
+          "id": "a51e4cea-15e8-407b-b175-fd8713eae3a4",
+          "name": "audio-player",
+          "parameters": {}
+        }
+      },
+      "name": "Sphere (1)",
+      "order": -0.5855709216722038,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/audio/canto-Pellar.mp3"
+        },
+        "paused": true
+      }
     }
   },
   "spaces": {
