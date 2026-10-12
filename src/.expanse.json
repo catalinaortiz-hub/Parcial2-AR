@@ -240,65 +240,63 @@
       "position": [
         0,
         0,
-        0
+        0.20079572219813333
       ],
       "rotation": [
-        0,
-        0,
-        0,
-        1
+        0.6685825965441228,
+        -0.23021144975504493,
+        -0.23021144975504498,
+        0.6685825965441229
       ],
       "scale": [
         0.5000000000000006,
         0.5000000000000006,
         0.5000000000000006
       ],
-      "geometry": {
-        "type": "sphere",
-        "radius": 0.5
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
       "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
       "components": {},
       "name": "Sphere",
-      "order": 1.8006080637570332
+      "order": 1.8006080637570332,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Meshy_AI_great_kiskadee_bird_1012030546_texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
     },
     "c4d2488f-bd0b-440a-ba50-2746209303e4": {
       "id": "c4d2488f-bd0b-440a-ba50-2746209303e4",
       "position": [
         0,
         0,
-        0
+        0.13266946025969872
       ],
       "rotation": [
-        0,
-        0,
-        0,
-        1
+        0.6705660873559175,
+        0.22436827424610822,
+        0.2243682742461083,
+        0.6705660873559176
       ],
       "scale": [
         0.4,
         0.4,
         0.4
       ],
-      "geometry": {
-        "type": "box",
-        "depth": 1,
-        "height": 1,
-        "width": 1
-      },
-      "material": {
-        "type": "basic",
-        "color": "#FFFFFF"
-      },
       "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
       "components": {},
       "name": "Box",
       "order": 1.5540455048305906,
-      "hidden": false
+      "hidden": false,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/Meshy_AI_Scarlet_Bird_Lowpoly_1012031155_texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
     },
     "d2c0875f-2e90-4966-8ba3-4865afbdb79c": {
       "id": "d2c0875f-2e90-4966-8ba3-4865afbdb79c",
