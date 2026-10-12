@@ -260,7 +260,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Meshy_AI_great_kiskadee_bird_1012030546_texture.glb"
+          "asset": "assets/models/Meshy_AI_great_kiskadee_bird_1012030546_texture.glb"
         },
         "animationClip": "",
         "loop": true
@@ -292,7 +292,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Meshy_AI_Scarlet_Bird_Lowpoly_1012031155_texture.glb"
+          "asset": "assets/models/Meshy_AI_Scarlet_Bird_Lowpoly_1012031155_texture.glb"
         },
         "animationClip": "",
         "loop": true
@@ -324,7 +324,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Meshy_AI_Hummingbird_SmartTopo_1012033623_texture.glb"
+          "asset": "assets/models/Meshy_AI_Hummingbird_SmartTopo_1012033623_texture.glb"
         },
         "animationClip": "",
         "loop": true
@@ -356,7 +356,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Meshy_AI_Southern_Lapwing_Bird_1012034655_texture.glb"
+          "asset": "assets/models/Meshy_AI_Southern_Lapwing_Bird_1012034655_texture.glb"
         },
         "animationClip": "",
         "loop": true
@@ -388,7 +388,7 @@
       "gltfModel": {
         "src": {
           "type": "asset",
-          "asset": "assets/Meshy_AI_Blue_Bird_Smart_Topol_1012035232_texture.glb"
+          "asset": "assets/models/Meshy_AI_Blue_Bird_Smart_Topol_1012035232_texture.glb"
         },
         "animationClip": "",
         "loop": true
