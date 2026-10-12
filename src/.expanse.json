@@ -49,10 +49,10 @@
         3
       ],
       "rotation": [
-        0.0004436887233141012,
-        0.9659425615285845,
-        -0.25875089860082223,
-        0.0016563336561801576
+        -0.0007378570181568076,
+        0.9659423816145076,
+        -0.25874867899038856,
+        0.001972837713156285
       ],
       "scale": [
         1,
@@ -338,15 +338,15 @@
         0.19780332131034992
       ],
       "rotation": [
-        0.7071067811865474,
-        0,
-        0,
-        0.7071067811865477
+        0.6813236886951011,
+        0.1892036741484546,
+        0.18920367433428575,
+        0.6813236899815184
       ],
       "scale": [
         0.40000000000000047,
         0.40000000000000036,
-        0.40000000000000036
+        0.4000000000000003
       ],
       "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
       "components": {},
@@ -408,13 +408,14 @@
         1
       ],
       "scale": [
-        0.15,
-        0.15,
-        0.15
+        0.1,
+        0.1,
+        0.1
       ],
       "geometry": {
-        "type": "sphere",
-        "radius": 0.5
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 0.2000000000000017
       },
       "material": {
         "type": "basic",
@@ -428,7 +429,7 @@
           "parameters": {}
         }
       },
-      "name": "Sphere (1)",
+      "name": "botonAudio",
       "order": -0.5855709216722038,
       "audio": {
         "src": {
@@ -437,6 +438,397 @@
         },
         "paused": true
       }
+    },
+    "3d482d7f-d6c2-4e0b-a367-b53cf241cd13": {
+      "id": "3d482d7f-d6c2-4e0b-a367-b53cf241cd13",
+      "position": [
+        0,
+        -0.10349293786708866,
+        2.220446049250313e-15
+      ],
+      "rotation": [
+        -0.707106799999999,
+        0,
+        0,
+        0.7071067623730954
+      ],
+      "scale": [
+        1,
+        1.0000000532124818,
+        1.0000000532124818
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/play.png"
+        },
+        "forceTransparent": true,
+        "side": "back"
+      },
+      "parentId": "d899582e-bdf1-482c-ab49-f1900dfa91c1",
+      "components": {},
+      "name": "Plane",
+      "order": 1.3053399209177874,
+      "hidden": false
+    },
+    "11b2c778-b723-4a9f-9552-9eb7f7b2cd86": {
+      "id": "11b2c778-b723-4a9f-9552-9eb7f7b2cd86",
+      "position": [
+        1.4096169911296954,
+        0,
+        0.1339373332163296
+      ],
+      "rotation": [
+        0.7071067811865476,
+        1.232595164407831e-32,
+        1.232595164407831e-32,
+        0.7071067811865475
+      ],
+      "scale": [
+        2.4000000000000012,
+        2.4000000000000012,
+        2.4000000000000012
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d899582e-bdf1-482c-ab49-f1900dfa91c1",
+      "components": {},
+      "ui": {
+        "width": 70,
+        "height": 10,
+        "text": "Escuchar canto",
+        "color": "#ffffff",
+        "fontSize": 12,
+        "type": "3d",
+        "font": {
+          "type": "font",
+          "font": "Futura"
+        }
+      },
+      "name": "Text",
+      "order": 2.7920192403563298,
+      "hidden": false
+    },
+    "addf38ad-9f15-4e7d-bb7f-b17e80ba667a": {
+      "id": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "position": [
+        4.090779137918744,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "d899582e-bdf1-482c-ab49-f1900dfa91c1",
+      "components": {},
+      "name": "barras",
+      "order": 4.47740828435919,
+      "hidden": true
+    },
+    "c086eefa-b30c-4a69-b675-c639ad790704": {
+      "id": "c086eefa-b30c-4a69-b675-c639ad790704",
+      "position": [
+        -3.2100167710365515,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.2
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra01",
+      "order": 1.0572785762692036
+    },
+    "312a73a3-52c3-4d13-af0b-cedd3450f53d": {
+      "id": "312a73a3-52c3-4d13-af0b-cedd3450f53d",
+      "position": [
+        -3.031054601342026,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.45
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra02",
+      "order": 2.488410595727128
+    },
+    "bdd734a6-9d10-4dea-a2cb-5017dae54e7e": {
+      "id": "bdd734a6-9d10-4dea-a2cb-5017dae54e7e",
+      "position": [
+        -2.824554654419801,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.7
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra03",
+      "order": 4.480660690545855
+    },
+    "96d6c5f9-7fe8-4312-911b-19862f414ecf": {
+      "id": "96d6c5f9-7fe8-4312-911b-19862f414ecf",
+      "position": [
+        -2.6177380269690698,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.35
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra04",
+      "order": 5.481839213985987
+    },
+    "dd9bd260-d234-4f17-908b-3dd720f4995c": {
+      "id": "dd9bd260-d234-4f17-908b-3dd720f4995c",
+      "position": [
+        -2.3974445327817246,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.9
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra05",
+      "order": 7.082312520651719
+    },
+    "6185a5e7-6d82-43db-b955-afc3af347d7e": {
+      "id": "6185a5e7-6d82-43db-b955-afc3af347d7e",
+      "position": [
+        -2.211525877508466,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.55
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra06",
+      "order": 8.801858768157704
+    },
+    "d4ca421a-56ac-4e4d-9441-8a434f6b2919": {
+      "id": "d4ca421a-56ac-4e4d-9441-8a434f6b2919",
+      "position": [
+        -2.0183611279388654,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        1
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra07",
+      "order": 10.166861151444998
+    },
+    "b517e65d-71a3-4a1e-8f50-643bfa38f7b2": {
+      "id": "b517e65d-71a3-4a1e-8f50-643bfa38f7b2",
+      "position": [
+        -1.8255929434163871,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.4
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra08",
+      "order": 11.597897282479224
+    },
+    "895bc824-9f4b-4487-9067-2d287a33fbe6": {
+      "id": "895bc824-9f4b-4487-9067-2d287a33fbe6",
+      "position": [
+        -1.646500431790848,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.09,
+        0.10000000000000003,
+        0.75
+      ],
+      "geometry": {
+        "type": "capsule",
+        "radius": 0.5,
+        "height": 0.5
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "addf38ad-9f15-4e7d-bb7f-b17e80ba667a",
+      "components": {},
+      "name": "barra09",
+      "order": 12.718678792134504
     }
   },
   "spaces": {
