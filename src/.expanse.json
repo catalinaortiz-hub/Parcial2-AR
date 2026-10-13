@@ -1,5 +1,445 @@
 {
   "objects": {
+    "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9": {
+      "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9",
+      "position": [
+        -0.9027189178047643,
+        0.035615321551400125,
+        0.4159928827013291
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "name": "Tarjetas",
+      "instanceData": {
+        "instanceOf": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/470f73f1-c072-4946-87dc-5bad6b42e8b1"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/f4b4be39-fe68-41bb-9cdd-2898645bafab"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/e9d5ce5a-73ec-4581-b111-bdccfc161111"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/d792416c-0ca0-4e37-a4dd-0546fd3e492c"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/9bf6f6db-0388-403a-92f7-3c7811d49590"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "cf4111fc-ad1d-4e14-8fde-bbbe27be96a9/64470200-32db-46fc-8498-003b9bf59cdd"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      }
+    },
+    "13936555-40ff-4644-b6c6-fc37d48f8c1b": {
+      "id": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "position": [
+        -0.9027189178047643,
+        0.035615321551400125,
+        0.4159928827013291
+      ],
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "50abaedb-fedf-479f-b939-db24f52987fc"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "93b9efe9-1aa4-41b1-96d3-03f6d4c5f6d7"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "58470905-71d4-456d-8be0-9c5ebc60ed93"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "21637885-a269-450e-b237-789a20acbb3f"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "cd5e41ed-df2e-4996-9f6d-3fc4cbeb1c4e"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "27ee333b-1f7c-451b-8ff0-63932f36d2bc"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      },
+      "name": "Tarjetas",
+      "order": -7.466311355044423,
+      "prefab": true
+    },
+    "470f73f1-c072-4946-87dc-5bad6b42e8b1": {
+      "id": "470f73f1-c072-4946-87dc-5bad6b42e8b1",
+      "position": [
+        0.7621478958572561,
+        -0.10867872858242622,
+        -0.00036054392496313176
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.11974413221686891,
+        0.10000000000000012,
+        0.21312528891329696
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 0.2000000000000017
+      },
+      "material": {
+        "type": "basic",
+        "color": "#dd1b22"
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "botonAlimentacion",
+      "order": -2.0513558334106845
+    },
+    "66bd8b7b-7210-4135-abe1-773707552f9f": {
+      "id": "66bd8b7b-7210-4135-abe1-773707552f9f",
+      "position": [
+        0,
+        -0.11026181553038622,
+        0.03213129977637719
+      ],
+      "rotation": [
+        0.7071067811865475,
+        -1.2723203906839595e-19,
+        3.552500633334827e-17,
+        0.7071067811865476
+      ],
+      "scale": [
+        1.2933094555661615,
+        0.8688745741961214,
+        0.8688745741961214
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/alimentacionLogo.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "470f73f1-c072-4946-87dc-5bad6b42e8b1",
+      "components": {},
+      "name": "Plane",
+      "order": 1.911703806143314
+    },
+    "d792416c-0ca0-4e37-a4dd-0546fd3e492c": {
+      "id": "d792416c-0ca0-4e37-a4dd-0546fd3e492c",
+      "position": [
+        -4.440892098500626e-16,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/tarjetas/AlimentacionPellar.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "PanelAlimentacion",
+      "order": -4.821075246446919
+    },
+    "9bf6f6db-0388-403a-92f7-3c7811d49590": {
+      "id": "9bf6f6db-0388-403a-92f7-3c7811d49590",
+      "position": [
+        -4.440892098500626e-16,
+        0.001875110164774263,
+        -0.000016878924019914088
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/tarjetas/ComportamientoPellar.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "PanelComportamiento",
+      "order": -3.2788303219646573
+    },
+    "64470200-32db-46fc-8498-003b9bf59cdd": {
+      "id": "64470200-32db-46fc-8498-003b9bf59cdd",
+      "position": [
+        -4.440892098500626e-16,
+        0.0009535473256460092,
+        -0.000008583417209995226
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/tarjetas/HabitatPellar.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "PanelHabitat",
+      "order": -2.612459209887829
+    },
+    "f4b4be39-fe68-41bb-9cdd-2898645bafab": {
+      "id": "f4b4be39-fe68-41bb-9cdd-2898645bafab",
+      "position": [
+        0.7180834531726901,
+        0.20518331768689824,
+        -0.000360543924963104
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.11974413221686891,
+        0.10000000000000012,
+        0.21312528891329696
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 0.2000000000000017
+      },
+      "material": {
+        "type": "basic",
+        "color": "#dd1b22"
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "botonComportamiento",
+      "order": -1.3353420134207925
+    },
+    "59ca2951-af7d-4aef-9b3d-05979a921713": {
+      "id": "59ca2951-af7d-4aef-9b3d-05979a921713",
+      "position": [
+        0,
+        -0.11026181553038623,
+        0.03213129977637674
+      ],
+      "rotation": [
+        0.7071067811865475,
+        -1.6654781525287982e-17,
+        1.0135050845055579e-17,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.9462577085866379,
+        0.8688745741961214,
+        0.8688745741961214
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/comportamientoLogo.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "f4b4be39-fe68-41bb-9cdd-2898645bafab",
+      "components": {},
+      "name": "Plane (1)",
+      "order": 1.911703806143314
+    },
+    "e9d5ce5a-73ec-4581-b111-bdccfc161111": {
+      "id": "e9d5ce5a-73ec-4581-b111-bdccfc161111",
+      "position": [
+        0.5823460195289347,
+        -0.027971497173292614,
+        -0.0003605439249631248
+      ],
+      "rotation": [
+        -0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.11974413221686891,
+        0.10000000000000014,
+        0.21312528891329702
+      ],
+      "geometry": {
+        "type": "cylinder",
+        "radius": 0.5,
+        "height": 0.2000000000000017
+      },
+      "material": {
+        "type": "basic",
+        "color": "#dd1b22"
+      },
+      "parentId": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+      "components": {},
+      "name": "botonHabitat",
+      "order": -0.9164584374828169
+    },
+    "d32feeef-ace5-4f65-b88c-193634919a31": {
+      "id": "d32feeef-ace5-4f65-b88c-193634919a31",
+      "position": [
+        0,
+        -0.13799075112556736,
+        0.03368510793494403
+      ],
+      "rotation": [
+        0.7071067811865475,
+        -1.665478152528798e-17,
+        1.0135050845055573e-17,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.946257708586638,
+        0.8688745741961214,
+        0.8688745741961214
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/habitatLogo.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "e9d5ce5a-73ec-4581-b111-bdccfc161111",
+      "components": {},
+      "name": "Plane (2)",
+      "order": 1.911703806143314
+    },
     "d899582e-bdf1-482c-ab49-f1900dfa91c1": {
       "id": "d899582e-bdf1-482c-ab49-f1900dfa91c1",
       "position": [
@@ -22,7 +462,39 @@
       "instanceData": {
         "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
         "deletions": {},
-        "children": {}
+        "children": {
+          "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8": {
+            "id": "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8",
+            "deletions": {},
+            "position": [
+              0.06425960221425697,
+              0,
+              -0.839
+            ],
+            "ui": {
+              "flexDirection": "row",
+              "background": "#dd1b22",
+              "backgroundOpacity": 0.7,
+              "width": 70,
+              "height": 10,
+              "text": "Escuchar canto",
+              "color": "#ffffff",
+              "fontSize": 12,
+              "type": "3d",
+              "font": {
+                "type": "font",
+                "font": "Futura"
+              },
+              "backgroundSize": "contain",
+              "borderRadius": 8,
+              "verticalTextAlign": "center",
+              "alignItems": "flex-start",
+              "justifyContent": "flex-start",
+              "paddingTop": 11,
+              "paddingBottom": 11
+            }
+          }
+        }
       },
       "parentId": "89ffd54b-1043-429b-b54b-f482a86b67ce",
       "components": {}
@@ -557,7 +1029,7 @@
     "57b0cee5-2bbd-4ca7-b901-87d13da85338": {
       "id": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
       "position": [
-        1.1804090034987853,
+        1.6283064219939511,
         0,
         0
       ],
@@ -585,7 +1057,7 @@
     "8ca67a21-3fc9-4110-8c55-6285b63110c6": {
       "id": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
       "position": [
-        0,
+        -0.4859782151980423,
         0,
         0
       ],
@@ -614,7 +1086,7 @@
     "0c3c7387-1444-4a49-8155-965b8e975f53": {
       "id": "0c3c7387-1444-4a49-8155-965b8e975f53",
       "position": [
-        -1.144908177363636,
+        -2.6872270766707747,
         0,
         0
       ],
@@ -643,7 +1115,7 @@
     "89ffd54b-1043-429b-b54b-f482a86b67ce": {
       "id": "89ffd54b-1043-429b-b54b-f482a86b67ce",
       "position": [
-        -2.2936486655696537,
+        -4.790711322816905,
         0,
         0
       ],
@@ -672,7 +1144,7 @@
     "64a98c3d-a407-4b0b-b4bc-50f0db006bfe": {
       "id": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
       "position": [
-        2.361118642153189,
+        3.765577609947885,
         0,
         0
       ],
@@ -868,7 +1340,37 @@
       "instanceData": {
         "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
         "deletions": {},
-        "children": {}
+        "children": {
+          "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8": {
+            "ui": {
+              "flexDirection": "row",
+              "background": "#dd1b22",
+              "backgroundOpacity": 0.7,
+              "width": 70,
+              "height": 10,
+              "text": "Escuchar canto",
+              "color": "#ffffff",
+              "fontSize": 12,
+              "type": "3d",
+              "font": {
+                "type": "font",
+                "font": "Futura"
+              },
+              "backgroundSize": "contain",
+              "borderRadius": 8,
+              "verticalTextAlign": "center",
+              "alignItems": "flex-start",
+              "justifyContent": "flex-start",
+              "paddingTop": 11,
+              "paddingBottom": 11
+            },
+            "position": [
+              0.06425960221425697,
+              0,
+              -0.839
+            ]
+          }
+        }
       },
       "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
       "components": {},
@@ -891,7 +1393,39 @@
       "instanceData": {
         "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
         "deletions": {},
-        "children": {}
+        "children": {
+          "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8": {
+            "id": "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8",
+            "deletions": {},
+            "position": [
+              0.06425960221425697,
+              0,
+              -0.839
+            ],
+            "ui": {
+              "flexDirection": "row",
+              "background": "#dd1b22",
+              "backgroundOpacity": 0.7,
+              "width": 70,
+              "height": 10,
+              "text": "Escuchar canto",
+              "color": "#ffffff",
+              "fontSize": 12,
+              "type": "3d",
+              "font": {
+                "type": "font",
+                "font": "Futura"
+              },
+              "backgroundSize": "contain",
+              "borderRadius": 8,
+              "verticalTextAlign": "center",
+              "alignItems": "flex-start",
+              "justifyContent": "flex-start",
+              "paddingTop": 11,
+              "paddingBottom": 11
+            }
+          }
+        }
       },
       "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
       "components": {},
@@ -914,7 +1448,50 @@
       "instanceData": {
         "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
         "deletions": {},
-        "children": {}
+        "children": {
+          "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8": {
+            "id": "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8",
+            "deletions": {},
+            "ui": {
+              "flexDirection": "row",
+              "background": "#dd1b22",
+              "backgroundOpacity": 0.7,
+              "width": 70,
+              "height": 10,
+              "text": "Escuchar canto",
+              "color": "#ffffff",
+              "fontSize": 12,
+              "type": "3d",
+              "font": {
+                "type": "font",
+                "font": "Futura"
+              },
+              "backgroundSize": "contain",
+              "borderRadius": 8,
+              "verticalTextAlign": "center",
+              "alignItems": "flex-start",
+              "justifyContent": "flex-start",
+              "paddingTop": 11,
+              "paddingBottom": 11
+            },
+            "position": [
+              0.06425960221425697,
+              2.5130574540900477e-17,
+              -0.838657322594107
+            ],
+            "rotation": [
+              0.7071067811865476,
+              1.7477818023156e-32,
+              9.223821757820096e-33,
+              0.7071067811865475
+            ],
+            "scale": [
+              2.4000000000000012,
+              2.4000000000000012,
+              2.4000000000000012
+            ]
+          }
+        }
       },
       "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
       "components": {},
@@ -937,7 +1514,39 @@
       "instanceData": {
         "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
         "deletions": {},
-        "children": {}
+        "children": {
+          "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8": {
+            "id": "3b467d5f-bbf3-46c6-b78b-0a7e2e21d0d8",
+            "deletions": {},
+            "position": [
+              0.06425960221425697,
+              0,
+              -0.839
+            ],
+            "ui": {
+              "flexDirection": "row",
+              "background": "#dd1b22",
+              "backgroundOpacity": 0.7,
+              "width": 70,
+              "height": 10,
+              "text": "Escuchar canto",
+              "color": "#ffffff",
+              "fontSize": 12,
+              "type": "3d",
+              "font": {
+                "type": "font",
+                "font": "Futura"
+              },
+              "backgroundSize": "contain",
+              "borderRadius": 8,
+              "verticalTextAlign": "center",
+              "alignItems": "flex-start",
+              "justifyContent": "flex-start",
+              "paddingTop": 11,
+              "paddingBottom": 11
+            }
+          }
+        }
       },
       "parentId": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
       "components": {},
@@ -948,6 +1557,407 @@
         },
         "paused": true
       }
+    },
+    "b3093f22-4e34-49cc-b9a9-9edaa8ab423a": {
+      "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "SonidoBotones",
+      "order": 10.492489514035876,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/audio/button-click.mp3"
+        },
+        "paused": true,
+        "volume": 0.4
+      }
+    },
+    "8219753d-9983-4f19-adfd-97e1ee4f57e4": {
+      "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4",
+      "position": [
+        -0.8898842471528476,
+        0,
+        0.4158759232352637
+      ],
+      "name": "Tarjetas (1)",
+      "instanceData": {
+        "instanceOf": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+        "deletions": {},
+        "children": {
+          "d792416c-0ca0-4e37-a4dd-0546fd3e492c": {
+            "id": "d792416c-0ca0-4e37-a4dd-0546fd3e492c",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/AlimentacionBichofue.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "9bf6f6db-0388-403a-92f7-3c7811d49590": {
+            "id": "9bf6f6db-0388-403a-92f7-3c7811d49590",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/ComportamientoBichofue.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "64470200-32db-46fc-8498-003b9bf59cdd": {
+            "id": "64470200-32db-46fc-8498-003b9bf59cdd",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/HabitatBichofue.png"
+              },
+              "forceTransparent": true
+            }
+          }
+        }
+      },
+      "parentId": "57b0cee5-2bbd-4ca7-b901-87d13da85338",
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/470f73f1-c072-4946-87dc-5bad6b42e8b1"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/f4b4be39-fe68-41bb-9cdd-2898645bafab"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/e9d5ce5a-73ec-4581-b111-bdccfc161111"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/d792416c-0ca0-4e37-a4dd-0546fd3e492c"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/9bf6f6db-0388-403a-92f7-3c7811d49590"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "8219753d-9983-4f19-adfd-97e1ee4f57e4/64470200-32db-46fc-8498-003b9bf59cdd"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      },
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ]
+    },
+    "468bc104-7e79-4f7d-ad33-a9e4d48ad459": {
+      "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459",
+      "position": [
+        -0.8831172018903972,
+        0,
+        0.3788249653273953
+      ],
+      "name": "Tarjetas (2)",
+      "instanceData": {
+        "instanceOf": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+        "deletions": {},
+        "children": {
+          "d792416c-0ca0-4e37-a4dd-0546fd3e492c": {
+            "id": "d792416c-0ca0-4e37-a4dd-0546fd3e492c",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/AlimentacionPechirrojo.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "9bf6f6db-0388-403a-92f7-3c7811d49590": {
+            "id": "9bf6f6db-0388-403a-92f7-3c7811d49590",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/ComportamientoPechirrojo.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "64470200-32db-46fc-8498-003b9bf59cdd": {
+            "id": "64470200-32db-46fc-8498-003b9bf59cdd",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/HabitatPechirrojo.png"
+              },
+              "forceTransparent": true
+            }
+          }
+        }
+      },
+      "parentId": "8ca67a21-3fc9-4110-8c55-6285b63110c6",
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/470f73f1-c072-4946-87dc-5bad6b42e8b1"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/f4b4be39-fe68-41bb-9cdd-2898645bafab"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/e9d5ce5a-73ec-4581-b111-bdccfc161111"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/d792416c-0ca0-4e37-a4dd-0546fd3e492c"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/9bf6f6db-0388-403a-92f7-3c7811d49590"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "468bc104-7e79-4f7d-ad33-a9e4d48ad459/64470200-32db-46fc-8498-003b9bf59cdd"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      },
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ]
+    },
+    "d44981a6-836b-4346-90d7-92149d1ff939": {
+      "id": "d44981a6-836b-4346-90d7-92149d1ff939",
+      "position": [
+        -0.8921871735470228,
+        0,
+        0.36133633527932196
+      ],
+      "name": "Tarjetas (3)",
+      "instanceData": {
+        "instanceOf": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+        "deletions": {},
+        "children": {
+          "d792416c-0ca0-4e37-a4dd-0546fd3e492c": {
+            "id": "d792416c-0ca0-4e37-a4dd-0546fd3e492c",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/AlimentacionColirrufo.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "9bf6f6db-0388-403a-92f7-3c7811d49590": {
+            "id": "9bf6f6db-0388-403a-92f7-3c7811d49590",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/ComportamientoColirrufo.png"
+              },
+              "forceTransparent": true
+            }
+          },
+          "64470200-32db-46fc-8498-003b9bf59cdd": {
+            "id": "64470200-32db-46fc-8498-003b9bf59cdd",
+            "deletions": {},
+            "material": {
+              "type": "basic",
+              "color": "#FFFFFF",
+              "textureSrc": {
+                "type": "asset",
+                "asset": "assets/tarjetas/HabitatColirrufo.png"
+              },
+              "forceTransparent": true
+            }
+          }
+        }
+      },
+      "parentId": "0c3c7387-1444-4a49-8155-965b8e975f53",
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/470f73f1-c072-4946-87dc-5bad6b42e8b1"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/f4b4be39-fe68-41bb-9cdd-2898645bafab"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/e9d5ce5a-73ec-4581-b111-bdccfc161111"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/d792416c-0ca0-4e37-a4dd-0546fd3e492c"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/9bf6f6db-0388-403a-92f7-3c7811d49590"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "d44981a6-836b-4346-90d7-92149d1ff939/64470200-32db-46fc-8498-003b9bf59cdd"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      },
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ]
+    },
+    "8e11b117-8e8b-4dbc-a83d-4f8211362bb9": {
+      "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9",
+      "position": [
+        -0.8415152957702623,
+        0,
+        0.4702584483533315
+      ],
+      "name": "Tarjetas (4)",
+      "instanceData": {
+        "instanceOf": "13936555-40ff-4644-b6c6-fc37d48f8c1b",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "64a98c3d-a407-4b0b-b4bc-50f0db006bfe",
+      "components": {
+        "bae21f30-841f-4eb5-9990-8ac821888d55": {
+          "id": "bae21f30-841f-4eb5-9990-8ac821888d55",
+          "name": "bird-info-panel",
+          "parameters": {
+            "botonAlimentacion": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/470f73f1-c072-4946-87dc-5bad6b42e8b1"
+            },
+            "botonComportamiento": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/f4b4be39-fe68-41bb-9cdd-2898645bafab"
+            },
+            "botonHabitat": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/e9d5ce5a-73ec-4581-b111-bdccfc161111"
+            },
+            "panelAlimentacion": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/d792416c-0ca0-4e37-a4dd-0546fd3e492c"
+            },
+            "panelComportamiento": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/9bf6f6db-0388-403a-92f7-3c7811d49590"
+            },
+            "panelHabitat": {
+              "type": "entity",
+              "id": "8e11b117-8e8b-4dbc-a83d-4f8211362bb9/64470200-32db-46fc-8498-003b9bf59cdd"
+            },
+            "sonidoBotones": {
+              "type": "entity",
+              "id": "b3093f22-4e34-49cc-b9a9-9edaa8ab423a"
+            }
+          }
+        }
+      },
+      "rotation": [
+        0.7071067811865475,
+        0,
+        0,
+        0.7071067811865476
+      ],
+      "scale": [
+        0.835113989710074,
+        0.46920757508360184,
+        1
+      ]
     }
   },
   "spaces": {

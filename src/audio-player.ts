@@ -1,130 +1,210 @@
 import * as ecs from '@8thwall/ecs'
 
-import PLAY_TEXTURE from './assets/textures/play.png'
-import PAUSE_TEXTURE from './assets/textures/pause.png'
+type BarraInfo = {
+  eid: ecs.Eid,
+  x: number,
+  y: number,
+  z: number,
+  fase: number,
+}
 
-// Guardamos el estado de cada reproductor.
-const estados = new Map<any, any>()
+type EstadoReproductor = {
+  barrasInfo: BarraInfo[],
+  tiempo: number,
+  pausado: boolean,
+  avisoEmitido: boolean,
+  callback: () => void,
+}
+
+// Cada mundo conserva el estado y los listeners de sus reproductores.
+const estadosPorMundo = new WeakMap<
+  ecs.World,
+  Map<ecs.Eid, EstadoReproductor>
+>()
+
+const obtenerEstados = (world: ecs.World) => {
+  let estados = estadosPorMundo.get(world)
+
+  if (!estados) {
+    estados = new Map()
+    estadosPorMundo.set(world, estados)
+  }
+
+  return estados
+}
+
+// Las barras del proyecto son cápsulas.
+// Las buscamos entre los descendientes sin depender del orden.
+const obtenerBarras = (
+  world: ecs.World,
+  boton: ecs.Eid
+): BarraInfo[] => {
+  const barras: ecs.Eid[] = []
+
+  const recorrer = (padre: ecs.Eid) => {
+    for (const hijo of world.getChildren(padre)) {
+      if (
+        ecs.CapsuleGeometry.has(world, hijo) &&
+        ecs.Scale.has(world, hijo)
+      ) {
+        barras.push(hijo)
+      }
+
+      recorrer(hijo)
+    }
+  }
+
+  recorrer(boton)
+
+  return barras.map((eid, indice) => {
+    const escala = ecs.Scale.get(world, eid)
+
+    return {
+      eid,
+      x: escala.x,
+      y: escala.y,
+      z: escala.z,
+      fase: indice * 0.8,
+    }
+  })
+}
+
+const restaurarBarras = (
+  world: ecs.World,
+  estado: EstadoReproductor
+) => {
+  estado.barrasInfo.forEach((barra) => {
+    if (ecs.Scale.has(world, barra.eid)) {
+      ecs.Scale.set(world, barra.eid, {
+        x: barra.x,
+        y: barra.y,
+        z: barra.z,
+      })
+    }
+  })
+
+  estado.tiempo = 0
+}
 
 ecs.registerComponent({
   name: 'audio-player',
 
   add: (world, component) => {
+    // Capturamos el eid porque component es un cursor reutilizado.
     const boton = component.eid
 
-    // Obtenemos los hijos de botonAudio.
-    const hijos = Array.from(world.getChildren(boton)) as any[]
-
-    if (hijos.length < 3) {
-      console.error(
-        'audio-player: revisa que Plane, Text y barras sean hijos de botonAudio.'
-      )
-      return
-    }
-
-    const plane = hijos[0]
-    const texto = hijos[1]
-    const barras = hijos[2]
-
-    // Obtenemos las nueve barras.
-    const hijosBarras = Array.from(world.getChildren(barras)) as any[]
-
-    // Guardamos la escala original de cada barra.
-    const barrasInfo = hijosBarras.map((eid, indice) => {
-      const escala = ecs.Scale.get(world, eid)
-
-      return {
-        eid,
-        x: escala.x,
-        y: escala.y,
-        z: escala.z,
-        fase: indice * 0.8,
-      }
-    })
-
-    estados.set(boton, {
-      plane,
-      texto,
-      barras,
-      barrasInfo,
+    const estado: EstadoReproductor = {
+      barrasInfo: obtenerBarras(world, boton),
       tiempo: 0,
-    })
+      pausado:
+        !ecs.Audio.has(world, boton) ||
+        ecs.Audio.get(world, boton).paused,
+      avisoEmitido: false,
 
-    // Comprobamos que exista el componente Audio.
-    if (!ecs.Audio.has(world, boton)) {
-      console.warn('No se encontró el componente Audio en botonAudio.')
-      return
-    }
-
-    // No modificamos las texturas ni ocultamos elementos.
-    // Plane, Text y barras conservan su apariencia en Studio.
-
-    // Al tocar el botón, alternamos reproducción y pausa.
-    world.events.addListener(
-      boton,
-      ecs.input.SCREEN_TOUCH_START,
-      () => {
+      callback: () => {
         if (!ecs.Audio.has(world, boton)) {
-          console.warn('No se encontró el componente Audio en botonAudio.')
+          console.warn(
+            'audio-player: no se encontró Audio en botonAudio.'
+          )
           return
         }
 
+        // Alternar reproducción y pausa.
         ecs.Audio.mutate(world, boton, (audio) => {
           audio.paused = !audio.paused
           return false
         })
 
-        const audioActual = ecs.Audio.get(world, boton)
+        estado.pausado = ecs.Audio.get(world, boton).paused
 
-        // Al pausar, restauramos la escala original de las barras.
-        if (audioActual.paused) {
-          const estado = estados.get(boton)
-          if (!estado) return
-
-          estado.barrasInfo.forEach((barra: any) => {
-            ecs.Scale.set(world, barra.eid, {
-              x: barra.x,
-              y: barra.y,
-              z: barra.z,
-            })
-          })
-
-          estado.tiempo = 0
+        if (estado.pausado) {
+          restaurarBarras(world, estado)
         }
-      }
-    )
+      },
+    }
 
-    console.log('Reproductor de audio preparado.')
+    obtenerEstados(world).set(boton, estado)
+
+    world.events.addListener(
+      boton,
+      ecs.input.SCREEN_TOUCH_START,
+      estado.callback
+    )
   },
 
   tick: (world, component) => {
-    const estado = estados.get(component.eid)
+    const estado = obtenerEstados(world).get(component.eid)
 
-    if (!estado || !ecs.Audio.has(world, component.eid)) return
+    if (!estado || !ecs.Audio.has(world, component.eid)) {
+      return
+    }
 
-    const audio = ecs.Audio.get(world, component.eid)
+    // Reintentar si los descendientes no estaban listos al iniciar.
+    if (estado.barrasInfo.length === 0) {
+      estado.barrasInfo = obtenerBarras(world, component.eid)
 
-    // No animamos mientras el audio está pausado.
-    if (audio.paused) return
+      if (
+        estado.barrasInfo.length === 0 &&
+        !estado.avisoEmitido
+      ) {
+        console.warn(
+          'audio-player: no se encontraron barras con geometría Capsule.'
+        )
+        estado.avisoEmitido = true
+      }
+    }
 
-    estado.tiempo += 0.12
+    const pausado = ecs.Audio.get(world, component.eid).paused
 
-    // Animación decorativa de las nueve barras.
-    estado.barrasInfo.forEach((barra: any) => {
-      const onda = (Math.sin(estado.tiempo + barra.fase) + 1) / 2
+    if (pausado) {
+      // También restaurar si otro script pausa el audio.
+      if (!estado.pausado) {
+        restaurarBarras(world, estado)
+      }
 
-      // La escala Z oscila entre el 15 % y el 100 %.
-      const escalaZ = barra.z * (0.15 + onda * 0.85)
+      estado.pausado = true
+      return
+    }
 
+    estado.pausado = false
+
+    // Velocidad independiente de los FPS.
+    // Equivale a los 0.12 radianes por frame originales a 60 FPS.
+    estado.tiempo += (world.time.delta / 1000) * 7.2
+
+    estado.barrasInfo.forEach((barra) => {
+      if (!ecs.Scale.has(world, barra.eid)) {
+        return
+      }
+
+      const onda = (
+        Math.sin(estado.tiempo + barra.fase) + 1
+      ) / 2
+
+      // Conservar X/Y y animar Z entre 15 % y 100 %.
       ecs.Scale.set(world, barra.eid, {
         x: barra.x,
         y: barra.y,
-        z: escalaZ,
+        z: barra.z * (0.15 + onda * 0.85),
       })
     })
   },
 
-  remove: (_world, component) => {
+  remove: (world, component) => {
+    const estados = obtenerEstados(world)
+    const estado = estados.get(component.eid)
+
+    if (!estado) {
+      return
+    }
+
+    world.events.removeListener(
+      component.eid,
+      ecs.input.SCREEN_TOUCH_START,
+      estado.callback
+    )
+
+    restaurarBarras(world, estado)
     estados.delete(component.eid)
   },
 })
