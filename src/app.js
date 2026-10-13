@@ -6,6 +6,7 @@ const configurarImagenes = () => {
             require('../image-targets/ave 3.json'),
             require('../image-targets/ave 4.json'),
             require('../image-targets/ave 5.json'),
+            require('../image-targets/LIBRO PARCIAL RV.json'),
         ],
     })
 }

@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 90,
+    "left": 825,
+    "width": 1066,
+    "height": 1421,
+    "isRotated": false,
+    "originalWidth": 2000,
+    "originalHeight": 1600
+  },
+  "imagePath": "image-targets/LIBRO PARCIAL RV_luminance.png",
+  "metadata": null,
+  "name": "LIBRO PARCIAL RV",
+  "resources": {
+    "originalImage": "LIBRO PARCIAL RV_original.png",
+    "croppedImage": "LIBRO PARCIAL RV_cropped.png",
+    "thumbnailImage": "LIBRO PARCIAL RV_thumbnail.png",
+    "luminanceImage": "LIBRO PARCIAL RV_luminance.png"
+  },
+  "created": 1791919753216,
+  "updated": 1791920055598
+}
