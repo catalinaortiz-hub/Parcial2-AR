@@ -2223,6 +2223,363 @@
       },
       "name": "Plane (1)",
       "order": 1.28766256644181
+    },
+    "3e727337-c513-4444-bb4d-0eefc599fd63": {
+      "id": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "position": [
+        7.311343361757954,
+        0,
+        -0.04817349810321936
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {},
+      "name": "quiz",
+      "imageTarget": {
+        "name": "quiz"
+      },
+      "order": 14.194834939144679
+    },
+    "fa6c87b5-54e5-4027-a1cf-300f374114d3": {
+      "id": "fa6c87b5-54e5-4027-a1cf-300f374114d3",
+      "position": [
+        0.3424127224242639,
+        0,
+        0.4289591105055015
+      ],
+      "rotation": [
+        0.7071067811865476,
+        1.232595164407831e-32,
+        1.232595164407831e-32,
+        0.7071067811865475
+      ],
+      "scale": [
+        0.4479273256529609,
+        0.4479273256529609,
+        0.4479273256529609
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/Meshy_AI_Bird_Observation_Towe_1013234050_image-to-3d-texture.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "name": "Meshy_AI_Bird_Observation_Towe_1013234050_image-to-3d-texture.glb",
+      "order": 1.05420856112519
+    },
+    "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e": {
+      "id": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e",
+      "position": [
+        -0.31478995497301554,
+        0,
+        0.7000508988305671
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.1,
+        0.1
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "name": "Pregunta1",
+      "order": 2.3592909454891737,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
+    },
+    "a7338f09-d2f0-4df8-a338-da59d297cd11": {
+      "id": "a7338f09-d2f0-4df8-a338-da59d297cd11",
+      "position": [
+        -0.013460672962480658,
+        0.7018593863422363,
+        0.004517735711763393
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.7,
+        4.7,
+        4.7
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta1/Pregunta1Quiz.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e",
+      "components": {},
+      "name": "Plane (2)",
+      "order": 16.036897743309677
+    },
+    "70317f95-81b3-463e-8234-e2c90d69ac3f": {
+      "id": "70317f95-81b3-463e-8234-e2c90d69ac3f",
+      "position": [
+        -0.30725406912534137,
+        0,
+        0.4794859337136774
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "name": "P1_opcionA",
+      "order": 3.5216844839672583,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
+    },
+    "eae39703-1cc7-422e-b963-01ef91ceefcf": {
+      "id": "eae39703-1cc7-422e-b963-01ef91ceefcf",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta1/OpcionA_Pechirrojo.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "70317f95-81b3-463e-8234-e2c90d69ac3f",
+      "components": {},
+      "name": "Plane (3)",
+      "order": 16.036897743309677
+    },
+    "b0dad91e-d45b-4277-8af6-41a6d57c298e": {
+      "id": "b0dad91e-d45b-4277-8af6-41a6d57c298e",
+      "position": [
+        -0.30725406912534137,
+        0,
+        0.32321351368975704
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "name": "P1_opcionB",
+      "order": 5.214266585966607,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
+    },
+    "cc88f5c6-ba37-466a-9f6d-2578af835e24": {
+      "id": "cc88f5c6-ba37-466a-9f6d-2578af835e24",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta1/OpcionB_BichofueCorrecta.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "b0dad91e-d45b-4277-8af6-41a6d57c298e",
+      "components": {},
+      "name": "Plane (4)",
+      "order": 16.036897743309677
+    },
+    "2044eb45-9f44-4a0d-895f-ca446f13eb5c": {
+      "id": "2044eb45-9f44-4a0d-895f-ca446f13eb5c",
+      "position": [
+        -0.30725406912534137,
+        0,
+        0.16795930512267587
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07,
+        0.07
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "name": "P1_opcionC",
+      "order": 6.777355909526871,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      }
+    },
+    "fe2ae9d6-16d7-44d8-a3f1-3fada183dc3b": {
+      "id": "fe2ae9d6-16d7-44d8-a3f1-3fada183dc3b",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta1/OpcionC_AzulejoComun.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "2044eb45-9f44-4a0d-895f-ca446f13eb5c",
+      "components": {},
+      "name": "Plane (5)",
+      "order": 16.036897743309677
     }
   },
   "spaces": {
