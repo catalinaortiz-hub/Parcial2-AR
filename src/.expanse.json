@@ -2398,7 +2398,7 @@
       "id": "eae39703-1cc7-422e-b963-01ef91ceefcf",
       "position": [
         -0.04979405376809609,
-        0.7015722165816803,
+        0.692410608061186,
         0.03284856373499956
       ],
       "rotation": [
@@ -2472,8 +2472,8 @@
       "id": "cc88f5c6-ba37-466a-9f6d-2578af835e24",
       "position": [
         -0.04979405376809609,
-        0.7015722165816803,
-        0.03284856373499956
+        0.6924106080611856,
+        0.03284856373499734
       ],
       "rotation": [
         0,
@@ -2546,8 +2546,8 @@
       "id": "fe2ae9d6-16d7-44d8-a3f1-3fada183dc3b",
       "position": [
         -0.04979405376809609,
-        0.7015722165816803,
-        0.03284856373499956
+        0.6924106080611829,
+        0.03284856373499889
       ],
       "rotation": [
         0,
@@ -2674,6 +2674,42 @@
             "panelNoAprobado": {
               "type": "entity",
               "id": "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1"
+            },
+            "toqueA": {
+              "type": "entity",
+              "id": "eae39703-1cc7-422e-b963-01ef91ceefcf"
+            },
+            "toqueB": {
+              "type": "entity",
+              "id": "cc88f5c6-ba37-466a-9f6d-2578af835e24"
+            },
+            "toqueC": {
+              "type": "entity",
+              "id": "fe2ae9d6-16d7-44d8-a3f1-3fada183dc3b"
+            },
+            "toque2A": {
+              "type": "entity",
+              "id": "a368ebc3-8685-4d2e-b849-c90bc8e8db3b"
+            },
+            "toque2B": {
+              "type": "entity",
+              "id": "f7726db9-510b-4625-a400-108d9be0ade3"
+            },
+            "toque2C": {
+              "type": "entity",
+              "id": "20e9899a-45da-40c6-ab8d-83ee3250b2fa"
+            },
+            "toque3A": {
+              "type": "entity",
+              "id": "a17fc004-8d5e-4598-9f1b-d138266a6d0a"
+            },
+            "toque3B": {
+              "type": "entity",
+              "id": "ff2d72d5-8e00-42df-aabd-29040493603d"
+            },
+            "toque3C": {
+              "type": "entity",
+              "id": "82c6848b-b885-42a1-9497-f1e4a7b9e615"
             }
           }
         }
@@ -2808,20 +2844,20 @@
     "8ec65789-3038-4d19-88e4-e11c4dbdd231": {
       "id": "8ec65789-3038-4d19-88e4-e11c4dbdd231",
       "position": [
-        -0.04979405376809609,
-        0.7015722165816803,
-        0.03284856373499956
+        -0.04979405376820978,
+        0.7015722165816838,
+        0.015044788282508659
       ],
       "rotation": [
         0,
-        0,
+        -1.2164049169486259e-48,
         0,
         1
       ],
       "scale": [
-        4.500000000000002,
-        4.500000000000002,
-        4.500000000000002
+        4.5,
+        4.5,
+        4.5
       ],
       "geometry": {
         "type": "box",
@@ -2834,7 +2870,7 @@
         "color": "#FFFFFF",
         "textureSrc": {
           "type": "asset",
-          "asset": "assets/textures/preguntas/pregunta1/OpcionC_AzulejoComun.png"
+          "asset": "assets/textures/siguiente.png"
         },
         "side": "front",
         "forceTransparent": true
@@ -2877,7 +2913,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "c620cae7-21b7-434a-8a77-dd7ea5be588a": {
       "id": "c620cae7-21b7-434a-8a77-dd7ea5be588a",
@@ -2951,7 +2988,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "a368ebc3-8685-4d2e-b849-c90bc8e8db3b": {
       "id": "a368ebc3-8685-4d2e-b849-c90bc8e8db3b",
@@ -3025,7 +3063,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "f7726db9-510b-4625-a400-108d9be0ade3": {
       "id": "f7726db9-510b-4625-a400-108d9be0ade3",
@@ -3099,7 +3138,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "20e9899a-45da-40c6-ab8d-83ee3250b2fa": {
       "id": "20e9899a-45da-40c6-ab8d-83ee3250b2fa",
@@ -3173,7 +3213,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "8c36b97a-e7af-4845-a3b5-b52118039728": {
       "id": "8c36b97a-e7af-4845-a3b5-b52118039728",
@@ -3247,7 +3288,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "a17fc004-8d5e-4598-9f1b-d138266a6d0a": {
       "id": "a17fc004-8d5e-4598-9f1b-d138266a6d0a",
@@ -3321,7 +3363,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "ff2d72d5-8e00-42df-aabd-29040493603d": {
       "id": "ff2d72d5-8e00-42df-aabd-29040493603d",
@@ -3395,7 +3438,8 @@
         "animationClip": "",
         "loop": true
       },
-      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "disabled": true
     },
     "82c6848b-b885-42a1-9497-f1e4a7b9e615": {
       "id": "82c6848b-b885-42a1-9497-f1e4a7b9e615",
@@ -3440,7 +3484,7 @@
       "id": "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1",
       "position": [
         7.004089292632613,
-        -0.04973814260805404,
+        0.07017098137436398,
         0.29247804933827615
       ],
       "rotation": [
@@ -3497,8 +3541,11 @@
       },
       "material": {
         "type": "unlit",
-        "color": "#c52407",
-        "textureSrc": null,
+        "color": "#ffffff",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/lastima.png"
+        },
         "side": "front",
         "forceTransparent": true
       },
@@ -3511,7 +3558,7 @@
       "id": "e06a67ed-90b1-4d9f-b98a-be68cf209eb0",
       "position": [
         7.004089292632613,
-        -0.049856580008895646,
+        0.06787617398373777,
         0.291124303652056
       ],
       "rotation": [
@@ -3569,7 +3616,10 @@
       "material": {
         "type": "unlit",
         "color": "#FFFFFF",
-        "textureSrc": null,
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/felicidades.png"
+        },
         "side": "front",
         "forceTransparent": true
       },
@@ -3577,6 +3627,77 @@
       "components": {},
       "name": "Plane (10)",
       "order": 1
+    },
+    "c6d73e46-6522-4a1b-b41a-a5ef03ae1d2c": {
+      "id": "c6d73e46-6522-4a1b-b41a-a5ef03ae1d2c",
+      "position": [
+        0.9854020072816212,
+        0.65,
+        0.6447978882478633
+      ],
+      "name": "botonAudio (5)",
+      "instanceData": {
+        "instanceOf": "cc22d50b-4b37-4b84-9223-d5906abf2505",
+        "deletions": {},
+        "children": {}
+      },
+      "parentId": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e",
+      "components": {},
+      "rotation": [
+        -6.123233995736767e-17,
+        -6.123233995736767e-17,
+        -6.123233995736767e-17,
+        1
+      ],
+      "scale": [
+        0.4000000000000001,
+        0.4000000000000001,
+        0.4000000000000001
+      ],
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/audio/canto-bichofue.mp3"
+        },
+        "paused": true
+      }
+    },
+    "577e9f1a-e484-4f6e-924f-abc60dbd2ffe": {
+      "id": "577e9f1a-e484-4f6e-924f-abc60dbd2ffe",
+      "position": [
+        1.5541933336417344,
+        0.39999999999999813,
+        1.0164499696344418
+      ],
+      "rotation": [
+        0.7071067811865476,
+        1.232595164407831e-32,
+        1.232595164407831e-32,
+        0.7071067811865475
+      ],
+      "scale": [
+        4.500000000000005,
+        2.5000001330312007,
+        2.5000001330312007
+      ],
+      "geometry": {
+        "type": "plane",
+        "width": 1,
+        "height": 1
+      },
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/plumas.png"
+        },
+        "forceTransparent": true
+      },
+      "parentId": "ad4ee88c-ebc6-402b-a71b-f1bb83e26dfe",
+      "components": {},
+      "name": "Plane (11)",
+      "order": -1.7055529641143208
     }
   },
   "spaces": {

@@ -5,7 +5,7 @@ const estados = new Map<any, any>()
 
 function reproducirAudio(world: any, entidad: any) {
   if (!entidad || !ecs.Audio.has(world, entidad)) {
-    console.warn('No se encontró el componente Audio.')
+    console.warn('No se encontró el componente Audio:', entidad)
     return
   }
 
@@ -16,11 +16,31 @@ function reproducirAudio(world: any, entidad: any) {
 }
 
 function ocultar(world: any, entidad: any) {
-  if (entidad) ecs.Hidden.set(world, entidad, {})
+  if (entidad) {
+    ecs.Hidden.set(world, entidad, {})
+  }
 }
 
 function mostrar(world: any, entidad: any) {
-  if (entidad) ecs.Hidden.remove(world, entidad)
+  if (entidad) {
+    ecs.Hidden.remove(world, entidad)
+  }
+}
+
+function desactivar(world: any, entidad: any) {
+  if (entidad && ecs.Disabled.has(world, entidad)) {
+    ecs.Disabled.set(world, entidad, {})
+  }
+}
+
+function activar(world: any, entidad: any) {
+  if (!entidad) return
+
+  if (ecs.Disabled.has(world, entidad)) {
+    ecs.Disabled.remove(world, entidad)
+  }
+
+  ecs.Hidden.remove(world, entidad)
 }
 
 function encoger(world: any, entidad: any) {
@@ -38,6 +58,8 @@ function encoger(world: any, entidad: any) {
 }
 
 function girar(world: any, entidad: any) {
+  if (!entidad) return
+
   ecs.RotateAnimation.set(world, entidad, {
     autoFrom: true,
     toX: 360,
@@ -51,6 +73,8 @@ function girar(world: any, entidad: any) {
 }
 
 function destacar(world: any, entidad: any) {
+  if (!entidad) return
+
   ecs.ScaleAnimation.set(world, entidad, {
     autoFrom: true,
     toX: 0.09,
@@ -70,16 +94,25 @@ ecs.registerComponent({
     opcionA: ecs.eid,
     opcionB: ecs.eid,
     opcionC: ecs.eid,
+    toqueA: ecs.eid,
+    toqueB: ecs.eid,
+    toqueC: ecs.eid,
 
     pregunta2: ecs.eid,
     opcion2A: ecs.eid,
     opcion2B: ecs.eid,
     opcion2C: ecs.eid,
+    toque2A: ecs.eid,
+    toque2B: ecs.eid,
+    toque2C: ecs.eid,
 
     pregunta3: ecs.eid,
     opcion3A: ecs.eid,
     opcion3B: ecs.eid,
     opcion3C: ecs.eid,
+    toque3A: ecs.eid,
+    toque3B: ecs.eid,
+    toque3C: ecs.eid,
 
     sonidoBien: ecs.eid,
     sonidoMal: ecs.eid,
@@ -100,17 +133,20 @@ ecs.registerComponent({
         const preguntas = [
           {
             titulo: r.pregunta1,
-            opciones: [r.opcionA, r.opcionB, r.opcionC],
+            cajas: [r.opcionA, r.opcionB, r.opcionC],
+            toques: [r.toqueA, r.toqueB, r.toqueC],
             correcta: 1,
           },
           {
             titulo: r.pregunta2,
-            opciones: [r.opcion2A, r.opcion2B, r.opcion2C],
+            cajas: [r.opcion2A, r.opcion2B, r.opcion2C],
+            toques: [r.toque2A, r.toque2B, r.toque2C],
             correcta: 1,
           },
           {
             titulo: r.pregunta3,
-            opciones: [r.opcion3A, r.opcion3B, r.opcion3C],
+            cajas: [r.opcion3A, r.opcion3B, r.opcion3C],
+            toques: [r.toque3A, r.toque3B, r.toque3C],
             correcta: 0,
           },
         ]
@@ -124,45 +160,61 @@ ecs.registerComponent({
 
         estados.set(eid, estado)
 
-        const ocultarPregunta = (indice: number) => {
-          const p = preguntas[indice]
+        const ocultarPregunta = (i: number) => {
+          const p = preguntas[i]
           if (!p) return
 
           ocultar(world, p.titulo)
-          p.opciones.forEach((opcion) => ocultar(world, opcion))
+
+          p.cajas.forEach((caja) => ocultar(world, caja))
+          p.toques.forEach((plano) => ocultar(world, plano))
         }
 
-        const mostrarPregunta = (indice: number) => {
-          const p = preguntas[indice]
+        const mostrarPregunta = (i: number) => {
+          const p = preguntas[i]
           if (!p) return
 
-          mostrar(world, p.titulo)
-          p.opciones.forEach((opcion) => mostrar(world, opcion))
+          activar(world, p.titulo)
+
+          p.cajas.forEach((caja) => activar(world, caja))
+          p.toques.forEach((plano) => activar(world, plano))
         }
 
-        // Inicio: pregunta 1 visible, preguntas 2 y 3 ocultas.
+        // Al iniciar, ocultar las preguntas 2 y 3.
         ocultarPregunta(1)
         ocultarPregunta(2)
+
+        // Mostrar la pregunta 1.
         mostrarPregunta(0)
 
         ocultar(world, r.panelAprobado)
         ocultar(world, r.panelNoAprobado)
         ocultar(world, r.botonSiguiente)
 
-        // Registrar las respuestas de las tres preguntas.
-        preguntas.forEach((pregunta, indicePregunta) => {
-          pregunta.opciones.forEach((entidadOpcion, indiceOpcion) => {
-            if (!entidadOpcion) {
+        // Registrar los toques en los planos y animar las cajas.
+        preguntas.forEach((p, indicePregunta) => {
+          p.toques.forEach((plano, indiceOpcion) => {
+            const caja = p.cajas[indiceOpcion]
+
+            if (!plano || !caja) {
               console.warn(
-                `Falta asignar una opción de la pregunta ${indicePregunta + 1}`
+                `Falta asignar el plano o la caja de la opción ${
+                  ['A', 'B', 'C'][indiceOpcion]
+                } de la pregunta ${indicePregunta + 1}.`
               )
               return
             }
 
             world.events.addListener(
-              entidadOpcion,
+              plano,
               ecs.input.SCREEN_TOUCH_START,
               () => {
+                console.log(
+                  `Toque: pregunta ${indicePregunta + 1}, opción ${
+                    ['A', 'B', 'C'][indiceOpcion]
+                  }`
+                )
+
                 if (
                   estado.terminado ||
                   estado.respondida ||
@@ -173,71 +225,58 @@ ecs.registerComponent({
 
                 estado.respondida = true
 
-                const correcta =
-                  indiceOpcion === pregunta.correcta
+                const esCorrecta = indiceOpcion === p.correcta
+                const cajaCorrecta = p.cajas[p.correcta]
 
-                if (correcta) {
+                if (esCorrecta) {
                   estado.aciertos += 1
                   reproducirAudio(world, r.sonidoBien)
 
-                  pregunta.opciones.forEach((opcion, i) => {
-                    if (i !== pregunta.correcta) {
-                      encoger(world, opcion)
+                  p.cajas.forEach((otraCaja, i) => {
+                    if (i !== p.correcta) {
+                      encoger(world, otraCaja)
                     }
                   })
 
-                  destacar(
-                    world,
-                    pregunta.opciones[pregunta.correcta]
-                  )
-
-                  console.log(
-                    `¡Correcto! Pregunta ${indicePregunta + 1}`
-                  )
+                  destacar(world, cajaCorrecta)
+                  console.log('Respuesta correcta')
                 } else {
                   reproducirAudio(world, r.sonidoMal)
 
-                  const opcionElegida = pregunta.opciones[indiceOpcion]
-                  const opcionCorrecta =
-                    pregunta.opciones[pregunta.correcta]
+                  girar(world, caja)
+                  destacar(world, cajaCorrecta)
 
-                  girar(world, opcionElegida)
-                  destacar(world, opcionCorrecta)
-
-                  pregunta.opciones.forEach((opcion, i) => {
-                    if (
-                      i !== indiceOpcion &&
-                      i !== pregunta.correcta
-                    ) {
-                      encoger(world, opcion)
+                  p.cajas.forEach((otraCaja, i) => {
+                    if (i !== indiceOpcion && i !== p.correcta) {
+                      encoger(world, otraCaja)
                     }
                   })
 
-                  // Tras girar, desaparece también la opción elegida.
                   world.time.setTimeout(() => {
-                    encoger(world, opcionElegida)
+                    encoger(world, caja)
                   }, 500)
 
                   console.log(
-                    `Incorrecto. La respuesta correcta era ${
-                      ['A', 'B', 'C'][pregunta.correcta]
-                    }.`
+                    `Respuesta incorrecta. La correcta es ${
+                      ['A', 'B', 'C'][p.correcta]
+                    }`
                   )
                 }
 
-                // Permitir avanzar solo después de responder.
                 mostrar(world, r.botonSiguiente)
               }
             )
           })
         })
 
-        // El mismo botón avanza entre preguntas y muestra el resultado.
+        // Botón Siguiente.
         if (r.botonSiguiente) {
           world.events.addListener(
             r.botonSiguiente,
             ecs.input.SCREEN_TOUCH_START,
             () => {
+              console.log('Toque detectado en Siguiente')
+
               if (!estado.respondida || estado.terminado) return
 
               ocultar(world, r.botonSiguiente)
@@ -247,32 +286,28 @@ ecs.registerComponent({
                 estado.indice += 1
                 estado.respondida = false
 
+                // Activar y mostrar la siguiente pregunta.
                 mostrarPregunta(estado.indice)
 
                 console.log(
-                  `Pregunta ${estado.indice + 1} de ${preguntas.length}`
+                  `Pregunta ${estado.indice + 1} activada`
                 )
-                console.log('Se está mostrando la pregunta 2')
               } else {
                 estado.terminado = true
 
                 if (estado.aciertos >= 2) {
                   mostrar(world, r.panelAprobado)
-                  console.log(
-                    `¡Aprobaste! Puntaje: ${estado.aciertos}/3`
-                  )
+                  console.log(`Aprobaste: ${estado.aciertos}/3`)
                 } else {
                   mostrar(world, r.panelNoAprobado)
-                  console.log(
-                    `No aprobaste. Puntaje: ${estado.aciertos}/3`
-                  )
+                  console.log(`No aprobaste: ${estado.aciertos}/3`)
                 }
               }
             }
           )
         }
 
-        console.log('Quiz preparado: 3 preguntas.')
+        console.log('Cuestionario inicializado')
       })
   },
 })
