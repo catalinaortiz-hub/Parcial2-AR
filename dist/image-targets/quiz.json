@@ -1,0 +1,23 @@
+{
+  "type": "PLANAR",
+  "properties": {
+    "top": 312,
+    "left": 1007,
+    "width": 795,
+    "height": 1060,
+    "isRotated": false,
+    "originalWidth": 2000,
+    "originalHeight": 1600
+  },
+  "imagePath": "image-targets/quiz_luminance.png",
+  "metadata": null,
+  "name": "quiz",
+  "resources": {
+    "originalImage": "quiz_original.png",
+    "croppedImage": "quiz_cropped.png",
+    "thumbnailImage": "quiz_thumbnail.png",
+    "luminanceImage": "quiz_luminance.png"
+  },
+  "created": 1791933826000,
+  "updated": 1791933875416
+}

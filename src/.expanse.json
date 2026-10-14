@@ -2288,9 +2288,9 @@
     "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e": {
       "id": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e",
       "position": [
-        -0.31478995497301554,
+        6.996553406784939,
         0,
-        0.7000508988305671
+        0.6518774007273478
       ],
       "rotation": [
         0,
@@ -2307,7 +2307,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
       "components": {},
       "name": "Pregunta1",
       "order": 2.3592909454891737,
@@ -2356,15 +2356,15 @@
       },
       "parentId": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e",
       "components": {},
-      "name": "Plane (2)",
+      "name": "Pregunta1.",
       "order": 16.036897743309677
     },
     "70317f95-81b3-463e-8234-e2c90d69ac3f": {
       "id": "70317f95-81b3-463e-8234-e2c90d69ac3f",
       "position": [
-        -0.30725406912534137,
+        7.004089292632613,
         0,
-        0.4794859337136774
+        0.43131243561045807
       ],
       "rotation": [
         0,
@@ -2381,7 +2381,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
       "components": {},
       "name": "P1_opcionA",
       "order": 3.5216844839672583,
@@ -2430,15 +2430,15 @@
       },
       "parentId": "70317f95-81b3-463e-8234-e2c90d69ac3f",
       "components": {},
-      "name": "Plane (3)",
+      "name": "P1_opcionA.",
       "order": 16.036897743309677
     },
     "b0dad91e-d45b-4277-8af6-41a6d57c298e": {
       "id": "b0dad91e-d45b-4277-8af6-41a6d57c298e",
       "position": [
-        -0.30725406912534137,
+        7.004089292632613,
         0,
-        0.32321351368975704
+        0.2750400155865377
       ],
       "rotation": [
         0,
@@ -2455,7 +2455,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
       "components": {},
       "name": "P1_opcionB",
       "order": 5.214266585966607,
@@ -2504,15 +2504,15 @@
       },
       "parentId": "b0dad91e-d45b-4277-8af6-41a6d57c298e",
       "components": {},
-      "name": "Plane (4)",
+      "name": "P1_opcionB.",
       "order": 16.036897743309677
     },
     "2044eb45-9f44-4a0d-895f-ca446f13eb5c": {
       "id": "2044eb45-9f44-4a0d-895f-ca446f13eb5c",
       "position": [
-        -0.30725406912534137,
+        7.004089292632613,
         0,
-        0.16795930512267587
+        0.11978580701945651
       ],
       "rotation": [
         0,
@@ -2529,7 +2529,7 @@
         "type": "basic",
         "color": "#FFFFFF"
       },
-      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193",
       "components": {},
       "name": "P1_opcionC",
       "order": 6.777355909526871,
@@ -2578,8 +2578,1005 @@
       },
       "parentId": "2044eb45-9f44-4a0d-895f-ca446f13eb5c",
       "components": {},
-      "name": "Plane (5)",
+      "name": "P1_opcionC.",
       "order": 16.036897743309677
+    },
+    "39b3a8aa-7b59-4c3a-85af-4868bff45eb9": {
+      "id": "39b3a8aa-7b59-4c3a-85af-4868bff45eb9",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "88453035-dc0f-486d-868a-8ff7c2fda864",
+      "components": {
+        "498c17f6-4097-49d6-92c6-45cd723b3580": {
+          "id": "498c17f6-4097-49d6-92c6-45cd723b3580",
+          "name": "quiz-controller",
+          "parameters": {
+            "pregunta1": {
+              "type": "entity",
+              "id": "7564cd52-e9ac-4b14-bef7-52d6fc70fc1e"
+            },
+            "opcionA": {
+              "type": "entity",
+              "id": "70317f95-81b3-463e-8234-e2c90d69ac3f"
+            },
+            "opcionB": {
+              "type": "entity",
+              "id": "b0dad91e-d45b-4277-8af6-41a6d57c298e"
+            },
+            "opcionC": {
+              "type": "entity",
+              "id": "2044eb45-9f44-4a0d-895f-ca446f13eb5c"
+            },
+            "sonidoBien": {
+              "type": "entity",
+              "id": "ed405ebb-6503-4560-acdf-b425a271918e"
+            },
+            "sonidoMal": {
+              "type": "entity",
+              "id": "96cbf422-a0f7-42f9-a305-d3812aa6716c"
+            },
+            "botonSiguiente": {
+              "type": "entity",
+              "id": "bf336b93-3157-4c29-af56-b597b878f51b"
+            },
+            "pregunta2": {
+              "type": "entity",
+              "id": "ad4ee88c-ebc6-402b-a71b-f1bb83e26dfe"
+            },
+            "opcion2A": {
+              "type": "entity",
+              "id": "37c82bf8-6e11-4ca6-956c-98c9a6ed65a6"
+            },
+            "opcion2B": {
+              "type": "entity",
+              "id": "9eb44e9c-cee7-4952-b956-d6b8eeab6cf9"
+            },
+            "opcion2C": {
+              "type": "entity",
+              "id": "909b33a8-c429-4640-b9de-599766139452"
+            },
+            "pregunta3": {
+              "type": "entity",
+              "id": "285e20f7-58bd-48d2-8e69-0f49092100ff"
+            },
+            "opcion3A": {
+              "type": "entity",
+              "id": "f2defc91-822a-41f7-9a98-cd1520aa8704"
+            },
+            "opcion3B": {
+              "type": "entity",
+              "id": "3eb03c6b-c6c6-4898-b3e6-3d9779c35a67"
+            },
+            "opcion3C": {
+              "type": "entity",
+              "id": "b0841f0a-d7cf-472f-9dfc-8880d816c484"
+            },
+            "panelAprobado": {
+              "type": "entity",
+              "id": "e06a67ed-90b1-4d9f-b98a-be68cf209eb0"
+            },
+            "panelNoAprobado": {
+              "type": "entity",
+              "id": "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1"
+            }
+          }
+        }
+      },
+      "name": "quiz",
+      "order": 15.667089946670535
+    },
+    "5babd3ae-c8e6-4314-99ce-be9d95313193": {
+      "id": "5babd3ae-c8e6-4314-99ce-be9d95313193",
+      "position": [
+        -7.311343361757954,
+        0,
+        0.2481734981032194
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "3e727337-c513-4444-bb4d-0eefc599fd63",
+      "components": {},
+      "name": "Empty Object",
+      "order": 8.502585939301108
+    },
+    "ed405ebb-6503-4560-acdf-b425a271918e": {
+      "id": "ed405ebb-6503-4560-acdf-b425a271918e",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "39b3a8aa-7b59-4c3a-85af-4868bff45eb9",
+      "components": {},
+      "name": "SonidoBien",
+      "order": 1.2632512281724617,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/audio/bien.mp3"
+        },
+        "paused": true
+      }
+    },
+    "96cbf422-a0f7-42f9-a305-d3812aa6716c": {
+      "id": "96cbf422-a0f7-42f9-a305-d3812aa6716c",
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "geometry": null,
+      "material": null,
+      "parentId": "39b3a8aa-7b59-4c3a-85af-4868bff45eb9",
+      "components": {},
+      "name": "SonidoMal",
+      "order": 2.766511595353367,
+      "audio": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/audio/mal.mp3"
+        },
+        "paused": true
+      }
+    },
+    "bf336b93-3157-4c29-af56-b597b878f51b": {
+      "id": "bf336b93-3157-4c29-af56-b597b878f51b",
+      "position": [
+        7.124759843230157,
+        0.07888023366334614,
+        -0.018749452065501347
+      ],
+      "rotation": [
+        0,
+        3.397962336776959e-33,
+        0,
+        1
+      ],
+      "scale": [
+        0.03,
+        0.03,
+        0.03
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "siguiente",
+      "order": 8.402303249948996,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "8ec65789-3038-4d19-88e4-e11c4dbdd231": {
+      "id": "8ec65789-3038-4d19-88e4-e11c4dbdd231",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta1/OpcionC_AzulejoComun.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "bf336b93-3157-4c29-af56-b597b878f51b",
+      "components": {},
+      "name": "siguiente.",
+      "order": 1
+    },
+    "ad4ee88c-ebc6-402b-a71b-f1bb83e26dfe": {
+      "id": "ad4ee88c-ebc6-402b-a71b-f1bb83e26dfe",
+      "position": [
+        6.997,
+        0,
+        0.652
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.10000000000000023,
+        0.10000000000000023
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "Pregunta2",
+      "order": 7.212946418083117,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "c620cae7-21b7-434a-8a77-dd7ea5be588a": {
+      "id": "c620cae7-21b7-434a-8a77-dd7ea5be588a",
+      "position": [
+        -0.013460672962480658,
+        0.7018593863422363,
+        0.004517735711763393
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.7,
+        4.7,
+        4.7
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta2/Pregunta2Quiz.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "ad4ee88c-ebc6-402b-a71b-f1bb83e26dfe",
+      "components": {},
+      "name": "Pregunta2.",
+      "order": 1
+    },
+    "37c82bf8-6e11-4ca6-956c-98c9a6ed65a6": {
+      "id": "37c82bf8-6e11-4ca6-956c-98c9a6ed65a6",
+      "position": [
+        7.004,
+        0,
+        0.431
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000016,
+        0.07000000000000016
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P2_opcionA ",
+      "order": 7.24230009153383,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "a368ebc3-8685-4d2e-b849-c90bc8e8db3b": {
+      "id": "a368ebc3-8685-4d2e-b849-c90bc8e8db3b",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta2/P2_OpcionA_AzulejoComunCorrecta.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "37c82bf8-6e11-4ca6-956c-98c9a6ed65a6",
+      "components": {},
+      "name": "P2_opcionA.",
+      "order": 3
+    },
+    "9eb44e9c-cee7-4952-b956-d6b8eeab6cf9": {
+      "id": "9eb44e9c-cee7-4952-b956-d6b8eeab6cf9",
+      "position": [
+        7.004089292632613,
+        0,
+        0.275
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000016,
+        0.07000000000000016
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P2_opcionB ",
+      "order": 7.271653764984544,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "f7726db9-510b-4625-a400-108d9be0ade3": {
+      "id": "f7726db9-510b-4625-a400-108d9be0ade3",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta2/P2_OpcionB_Bichofue.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "9eb44e9c-cee7-4952-b956-d6b8eeab6cf9",
+      "components": {},
+      "name": "P2_opcionB.",
+      "order": 5
+    },
+    "909b33a8-c429-4640-b9de-599766139452": {
+      "id": "909b33a8-c429-4640-b9de-599766139452",
+      "position": [
+        7.004089292632613,
+        0,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000016,
+        0.07000000000000016
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P2_opcionC ",
+      "order": 7.301007438435258,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "20e9899a-45da-40c6-ab8d-83ee3250b2fa": {
+      "id": "20e9899a-45da-40c6-ab8d-83ee3250b2fa",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta2/P2_OpcionC_Pellar.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "909b33a8-c429-4640-b9de-599766139452",
+      "components": {},
+      "name": "P2_opcionC.",
+      "order": 7
+    },
+    "285e20f7-58bd-48d2-8e69-0f49092100ff": {
+      "id": "285e20f7-58bd-48d2-8e69-0f49092100ff",
+      "position": [
+        6.997,
+        0,
+        0.652
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.1,
+        0.10000000000000046,
+        0.10000000000000046
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "Pregunta3",
+      "order": 7.596610796804091,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "8c36b97a-e7af-4845-a3b5-b52118039728": {
+      "id": "8c36b97a-e7af-4845-a3b5-b52118039728",
+      "position": [
+        -0.013460672962480658,
+        0.7018593863422363,
+        0.004517735711763393
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.7,
+        4.7,
+        4.7
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta3/Pregunta3Quiz.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "285e20f7-58bd-48d2-8e69-0f49092100ff",
+      "components": {},
+      "name": "Pregunta3.",
+      "order": 1
+    },
+    "f2defc91-822a-41f7-9a98-cd1520aa8704": {
+      "id": "f2defc91-822a-41f7-9a98-cd1520aa8704",
+      "position": [
+        7.004,
+        0,
+        0.431
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000031,
+        0.07000000000000031
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P3_opcionA ",
+      "order": 7.61689020229449,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "a17fc004-8d5e-4598-9f1b-d138266a6d0a": {
+      "id": "a17fc004-8d5e-4598-9f1b-d138266a6d0a",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta3/P3_OpcionA_Correcta.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "f2defc91-822a-41f7-9a98-cd1520aa8704",
+      "components": {},
+      "name": "P3_opcionA.",
+      "order": 3
+    },
+    "3eb03c6b-c6c6-4898-b3e6-3d9779c35a67": {
+      "id": "3eb03c6b-c6c6-4898-b3e6-3d9779c35a67",
+      "position": [
+        7.004089292632613,
+        0,
+        0.275
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000031,
+        0.07000000000000031
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P3_opcionB ",
+      "order": 7.637169607784889,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "ff2d72d5-8e00-42df-aabd-29040493603d": {
+      "id": "ff2d72d5-8e00-42df-aabd-29040493603d",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta3/P3_OpcionB.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "3eb03c6b-c6c6-4898-b3e6-3d9779c35a67",
+      "components": {},
+      "name": "P3_opcionB.",
+      "order": 5
+    },
+    "b0841f0a-d7cf-472f-9dfc-8880d816c484": {
+      "id": "b0841f0a-d7cf-472f-9dfc-8880d816c484",
+      "position": [
+        7.004089292632613,
+        0,
+        0.12
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000031,
+        0.07000000000000031
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "P3_opcionC ",
+      "order": 7.657449013275286,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "82c6848b-b885-42a1-9497-f1e4a7b9e615": {
+      "id": "82c6848b-b885-42a1-9497-f1e4a7b9e615",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": {
+          "type": "asset",
+          "asset": "assets/textures/preguntas/pregunta3/P3_OpcionC.png"
+        },
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "b0841f0a-d7cf-472f-9dfc-8880d816c484",
+      "components": {},
+      "name": "P3_opcionC.",
+      "order": 7
+    },
+    "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1": {
+      "id": "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1",
+      "position": [
+        7.004089292632613,
+        -0.04973814260805404,
+        0.29247804933827615
+      ],
+      "rotation": [
+        0,
+        1.0424955614149638e-33,
+        -1.924390591266381e-49,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000016,
+        0.07000000000000016
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "no aprobado ",
+      "order": 7.849168453005676,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "5ebe0e72-9d9a-4127-9ef9-47a176f26e8c": {
+      "id": "5ebe0e72-9d9a-4127-9ef9-47a176f26e8c",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#c52407",
+        "textureSrc": null,
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "6a7b6965-6bc3-4bd2-88e1-71c49f8446b1",
+      "components": {},
+      "name": "Plane (9)",
+      "order": 1
+    },
+    "e06a67ed-90b1-4d9f-b98a-be68cf209eb0": {
+      "id": "e06a67ed-90b1-4d9f-b98a-be68cf209eb0",
+      "position": [
+        7.004089292632613,
+        -0.049856580008895646,
+        0.291124303652056
+      ],
+      "rotation": [
+        6.195440985631415e-18,
+        2.471896692014841e-34,
+        -5.345529420184391e-49,
+        1
+      ],
+      "scale": [
+        0.07,
+        0.07000000000000044,
+        0.07000000000000044
+      ],
+      "material": {
+        "type": "basic",
+        "color": "#FFFFFF"
+      },
+      "components": {},
+      "name": "aprobado",
+      "order": 7.715156115826034,
+      "gltfModel": {
+        "src": {
+          "type": "asset",
+          "asset": "assets/models/CubitoBonito.glb"
+        },
+        "animationClip": "",
+        "loop": true
+      },
+      "parentId": "5babd3ae-c8e6-4314-99ce-be9d95313193"
+    },
+    "9dc7b575-87a9-428a-b00c-6282f644ee70": {
+      "id": "9dc7b575-87a9-428a-b00c-6282f644ee70",
+      "position": [
+        -0.04979405376809609,
+        0.7015722165816803,
+        0.03284856373499956
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        4.500000000000002,
+        4.500000000000002,
+        4.500000000000002
+      ],
+      "geometry": {
+        "type": "box",
+        "depth": 0.4,
+        "height": 0,
+        "width": 1
+      },
+      "material": {
+        "type": "unlit",
+        "color": "#FFFFFF",
+        "textureSrc": null,
+        "side": "front",
+        "forceTransparent": true
+      },
+      "parentId": "e06a67ed-90b1-4d9f-b98a-be68cf209eb0",
+      "components": {},
+      "name": "Plane (10)",
+      "order": 1
     }
   },
   "spaces": {
